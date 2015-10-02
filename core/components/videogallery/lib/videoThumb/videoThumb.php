@@ -48,6 +48,7 @@ class videoThumb {
 
 			$array = array(
 				'video' => $video
+				,'videoId' => $matches[1]
 				,'image' => $this->getRemoteImage($image)
 			);
 		}
@@ -61,6 +62,7 @@ class videoThumb {
 			}
 			$array = array(
 				'video' => $video
+				,'videoId' => $matches[1]
 				,'image' => $image
 			);
 		}
@@ -74,6 +76,7 @@ class videoThumb {
 			}
 			$array = array(
 				'video' => $video
+				,'videoId' => $matches[1]
 				,'image' => $image
 			);
 		}
