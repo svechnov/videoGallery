@@ -34,6 +34,7 @@
 <script type="text/javascript">
 // <![CDATA[
 {literal}
+var $ = jQuery.noConflict();
 Ext.onReady(function(){
 	var fld = MODx.load({
 		{/literal}
