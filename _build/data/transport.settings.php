@@ -30,6 +30,11 @@ $tmp = array(
 		'value' => '',
 		'area' => 'videogallery_fields',
 	),
+	'field_videoId' => array(
+		'xtype' => 'textfield',
+		'value' => '',
+		'area' => 'videogallery_fields',
+	),
 );
 
 foreach ($tmp as $k => $v) {

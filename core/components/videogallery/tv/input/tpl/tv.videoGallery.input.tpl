@@ -58,30 +58,25 @@ Ext.onReady(function(){
 
 {$fields =
 	[
-		'title'	=> $_config.videogallery_field_title,
-		'desc'	=> $_config.videogallery_field_desc,
-		'image'	=> $_config.videogallery_field_image,
-		'video'	=> $_config.videogallery_field_video
+		'title'		=> $_config.videogallery_field_title,
+		'desc'		=> $_config.videogallery_field_desc,
+		'image'		=> $_config.videogallery_field_image,
+		'video'		=> $_config.videogallery_field_video,
+		'videoId'	=> $_config.videogallery_field_videoId
 ]}
 
 {foreach from=$fields key=name item=item}
 	{if $item != ''}
 		{if substr($item, 0,3) == 'tv.'}
-			
 			{$vg_fields[$name] = str_replace('tv.', '', $item)}
 			{$input_ids_data = "tv`$modx->getObject('modTemplateVar', ['name'=>$vg_fields[$name]] )->id`"}
 			
 			{if $input_ids_data != 'tv' AND $input_ids_data != ''}
-				
 				{$input_ids[$name] = $input_ids_data}
-				
 			{/if}
-			
 		{else}
-			
 			{$vg_fields[$name] = $item}
 			{$input_ids[$name] = "modx-resource-`$vg_fields[$name]`"}
-			
 		{/if}
 	{/if}
 {/foreach}

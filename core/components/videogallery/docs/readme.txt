@@ -1,10 +1,10 @@
 --------------------
 videoGallery
 --------------------
-Author: John Doe <john@doe.com>
+Author: Pavel Gvozdb <pa6ok.ru>
 --------------------
 
-A basic Extra for MODx Revolution.
+Видеогалерея для MODX Revo.
 
 Feel free to suggest ideas/improvements/bugs on GitHub:
-http://github.com/username/videoGallery/issues
+http://github.com/gvozdb/videoGallery/issues
