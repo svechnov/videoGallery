@@ -9,10 +9,10 @@
 
 switch($modx->event->name)
 {
-	/* >> Перед рендерингом ТВшек */
-	case 'OnResourceTVFormPrerender':
+	/* >> Сохранение документа */
+	case 'OnDocFormSave':
 		
-		if( !$resource_id = & $scriptProperties['resource'] && !$resource = $modx->getObject('modResource', $resource_id) ) {return;}
+		if( !$resource = & $scriptProperties['resource'] ) {return;}
 		
 		if( !$videoGallery = $modx->getService('videoGallery', 'videoGallery', MODX_CORE_PATH .'components/videogallery/model/videogallery/') )
 		{
@@ -104,22 +104,6 @@ switch($modx->event->name)
 			}
 		}
 		/* << Правим картинки из папки "/0/" в папку "/res_id/" */
-		
-		
-	break;
-	/* << Перед рендерингом ТВшек */
-	
-	
-	/* >> Сохранение документа */
-	case 'OnDocFormSave':
-		
-		if( !$resource = & $scriptProperties['resource'] ) {return;}
-		
-		if( !$videoGallery = $modx->getService('videoGallery', 'videoGallery', MODX_CORE_PATH .'components/videogallery/model/videogallery/') )
-		{
-			$modx->log(xPDO::LOG_LEVEL_ERROR, "Не был подгружен компонент videoGallery");
-			return;
-		}
 		
 		
 		/* >> Удаляем ненужные картинки */

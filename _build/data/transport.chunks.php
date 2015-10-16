@@ -3,20 +3,10 @@
 $chunks = array();
 
 $tmp = array(
-	/*
-	'tpl.videoGallery' => array(
-		'file' => 'tpl.videoGallery',
+	'tpl.videoGallery.input' => array(
+		'file' => 'tpl.videoGallery.input',
 		'description' => '',
 	),
-	'tpl.videoGallery.filtersItemsWrapper' => array(
-		'file' => 'tpl.videoGallery.filtersItemsWrapper',
-		'description' => 'Шаблон обёртка вывода ссылок фильтров для отображения/скрытия объектов на карте',
-	),
-	'tpl.videoGallery.filtersItems' => array(
-		'file' => 'tpl.videoGallery.filtersItems',
-		'description' => 'Шаблон вывода ссылок фильтров для отображения/скрытия объектов на карте',
-	),
-	*/
 );
 
 // Save chunks for setup options
