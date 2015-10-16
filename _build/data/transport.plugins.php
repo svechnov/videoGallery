@@ -18,6 +18,7 @@ $tmp = array(
 		'file' => 'videoGallery.removeOldFiles',
 		'description' => '',
 		'events' => array(
+			//'OnResourceTVFormPrerender' => array(),
 			'OnDocFormSave' => array(),
 		),
 	),

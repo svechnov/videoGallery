@@ -3,12 +3,10 @@
 $snippets = array();
 
 $tmp = array(
-	/*
-	'videoGallery' => array(
-		'file' => 'videoGallery',
+	'videoGallery.input' => array(
+		'file' => 'videoGallery.input',
 		'description' => '',
 	),
-	*/
 );
 
 foreach ($tmp as $k => $v) {
