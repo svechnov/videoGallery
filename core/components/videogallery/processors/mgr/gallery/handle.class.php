@@ -157,7 +157,7 @@ class videoGalleryGalleryHandleProcessor extends modObjectProcessor
 		
 		
 		$data['json'] = $this->modx->toJSON( $data );
-		//$data['json'] = str_replace( '\/', '/', $data['json'] );
+		$data['json'] = str_replace( array("\r","\n"), '', $data['json'] );
 		
 		return $this->success( $this->video, $data );
 	}
