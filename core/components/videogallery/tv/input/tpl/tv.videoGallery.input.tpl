@@ -23,7 +23,7 @@
 			<b>JSON строка с данными о ролике:</b>
 		</div>
 		<div>
-			<input type="text" id="tv{$tv->id}" name="tv{$tv->id}" value="{$tv->value}" class="textfield" />
+			<textarea id="tv{$tv->id}" name="tv{$tv->id}" class="x-form-textarea x-form-field" style="width:100%; height:70px;">{$tv->value}</textarea>
 		</div>
 		<div>
 			<small id="vg_tv_error-{$tv->id}" style="color:red"></small>
