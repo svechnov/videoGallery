@@ -137,14 +137,14 @@ class videoGalleryGalleryHandleProcessor extends modObjectProcessor
 		{
 			if( isset( $this->video_data['snippet']['title'] ) )
 			{
-				// $data['title'] = nl2br( htmlspecialchars( $this->video_data['snippet']['title'] ) );
-				$data['title'] = nl2br( str_replace( '"', '\"', $this->video_data['snippet']['title'] ) );
+				$data['title'] = nl2br( htmlspecialchars( $this->video_data['snippet']['title'] ) );
+				// $data['title'] = nl2br( str_replace( '"', '\"', $this->video_data['snippet']['title'] ) );
 			}
 			
 			if( isset( $this->video_data['snippet']['description'] ) )
 			{
-				// $data['desc'] = nl2br( htmlspecialchars( $this->video_data['snippet']['description'] ) );
-				$data['desc'] = nl2br( str_replace( '"', '\"', $this->video_data['snippet']['description'] ) );
+				$data['desc'] = nl2br( htmlspecialchars( $this->video_data['snippet']['description'] ) );
+				// $data['desc'] = nl2br( str_replace( '"', '\"', $this->video_data['snippet']['description'] ) );
 			}
 		}
 		// << получаем название и описание ролика, если panorama отработала корректно
